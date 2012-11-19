@@ -1,5 +1,11 @@
 require "starapi/version"
 
 module Starapi
-  # Your code goes here...
+  class Testing
+    class << self
+      def testoso
+        "blablabla"
+      end
+    end
+  end
 end
