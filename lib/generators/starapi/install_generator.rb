@@ -1,7 +1,7 @@
 require "rails/generators"
 module Starapi
   module Generators
-    class InstallGenerator < Rails::Generatos::Base
+    class InstallGenerator < Rails::Generators::Base
 
       source_root File.expand_path("../../templates", __FILE__)
 
