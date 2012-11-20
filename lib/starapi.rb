@@ -5,13 +5,13 @@ require "starapi/soap_service_target"
 
 module Starapi
   mattr_accessor :namespace
-  @@namespace   = "http://www.opsolve.com/RS/webservices/"
+  @@namespace   = "http://www.example.com/RS/webservices/"
   mattr_accessor :service_url
-  @@service_url = 'http://198.61.141.129/READiDataExchange/WSRSDataExchange.asmx'
+  @@service_url = 'http://example/READiDataExchange/WSRSDataExchange.asmx'
   mattr_accessor :user
-  @@user        = "WSRS"
+  @@user        = "user"
   mattr_accessor :password
-  @@password    = "sting"
+  @@password    = "password"
 
   class << self
     def setup
