@@ -1,4 +1,5 @@
-module SoapServiceTarget
+module Starapi
+  module SoapServiceTarget
   class Base
     attr_reader :soap_execute_sp
 
@@ -6,4 +7,5 @@ module SoapServiceTarget
       @soap_execute_sp ||= SoapServiceFacade::ExecuteSP.new
     end
   end
+end
 end

@@ -1,8 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
 require "starapi/version"
-require "soap_service_facade"
-require "soap_service_target"
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Filipe Chagas"]
