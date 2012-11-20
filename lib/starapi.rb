@@ -3,6 +3,8 @@ require "starapi/soap_service_facade"
 require "starapi/soap_service_target"
 
 module Starapi
+  require 'starapi/engine' if defined?(Rails)
+
   mattr_accessor :namespace
   @@namespace   = "http://www.opsolve.com/RS/webservices/"
   mattr_accessor :service_url
