@@ -19,5 +19,6 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'typhoeus'
   gem.add_dependency 'nokogiri'
+  gem.add_dependency("railties", "~> 3.1")
 
 end
