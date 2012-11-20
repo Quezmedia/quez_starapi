@@ -1,3 +1,4 @@
+require "rails/generators"
 module Starapi
   module Generators
     class InstallGenerator < Rails::Generatos::Base
