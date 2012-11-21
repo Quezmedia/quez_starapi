@@ -1,7 +1,5 @@
 require 'rails'
 require "starapi/version"
-require "starapi/soap_service_facade"
-require "starapi/soap_service_target"
 
 module Starapi
   mattr_accessor :namespace
@@ -12,6 +10,9 @@ module Starapi
   @@user        = "user"
   mattr_accessor :password
   @@password    = "password"
+
+  autoload :SoapServiceFacade, "starapi/soap_service_facade"
+  autoload :SoapServiceTarget, "starapi/soap_service_target"
 
   class << self
     def setup
