@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib", "lib/soap_service_facade", "lib/soap_service_target"]
   gem.version       = Starapi::VERSION
 
-  gem.add_dependency 'typhoeus'
+  gem.add_runtime_dependency 'typhoeus'
   gem.add_dependency 'nokogiri'
   gem.add_dependency("railties", "~> 3.1")
 
