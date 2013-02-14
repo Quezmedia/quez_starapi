@@ -25,6 +25,12 @@ module Starapi
   mattr_accessor :assure_template_id
   @@assure_template_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
+  mattr_accessor :assure_user
+  @@assure_user = "xxxxxxxxxxxxxxxxx"
+
+  mattr_accessor :assure_password
+  @@assure_password = "xxxxxxxxxxxx"
+
   # Log system
   Logging.init :debug, :info, :warn, :error, :fatal
   layout = Logging::Layouts::Pattern.new :pattern => "[%d] [%-5l] %m\n"
