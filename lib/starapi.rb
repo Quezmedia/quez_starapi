@@ -22,6 +22,9 @@ module Starapi
   mattr_accessor :assure_host
   @@assure_host     = "xx.assuresign.net"
 
+  mattr_accessor :assure_template_id
+  @@assure_template_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
   # Log system
   Logging.init :debug, :info, :warn, :error, :fatal
   layout = Logging::Layouts::Pattern.new :pattern => "[%d] [%-5l] %m\n"
