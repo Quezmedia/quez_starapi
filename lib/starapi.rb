@@ -16,8 +16,11 @@ module Starapi
   mattr_accessor :assure_context_identifier
   @@assure_context_identifier    = "XXXXXXXXXXXXXXXXXXX"
 
+  mattr_accessor :assure_base_url
+  @@assure_base_url = "https://xx.assuresign.net/XXX/XXX/vs/XXX.svc"
+
   mattr_accessor :assure_host
-  @@assure_host    = "xx.assuresign.net"
+  @@assure_host     = "xx.assuresign.net"
 
   # Log system
   Logging.init :debug, :info, :warn, :error, :fatal

@@ -91,7 +91,7 @@ module Starapi
         Starapi.log.info "Calling Soap Submit Operation"
         @request_xml = envelope_submit_operation(args).to_xml
         Starapi.log.debug "Request XML:\n" + @request_xml
-        @response = Typhoeus::Request.post("https://#{Starapi.assure_host}/Documents/Services/DocumentNOW/v2/DocumentNOW.svc/Submit/text",
+        @response = Typhoeus::Request.post("#{Starapi.assure_base_url}/Services/DocumentNOW/v2/DocumentNOW.svc/Submit/text",
                                            :body    => @request_xml,
                                            :headers => {
                                              'Content-Type' => "text/xml; charset=utf-8",
